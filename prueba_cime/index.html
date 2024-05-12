@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css"> 
+    <script src="scripts.js"></script>
 </head>
     
 <body>
@@ -63,92 +64,110 @@
     <div class="slider-box">
         <ul>
             <li>
-                <img src="imagen/s1.jpg" alt="">
+                <img src="imagen/batman.jpg" alt="">
                 <div class="texto">
-                    <h2>Imagen 1</h2>
-                    <p>
-                        Probando
-                    </p>
+                    <h2>Batman</h2>
                 </div>
             </li>
             <li>
-                <img src="imagen/s2.jpg" alt="">
+                <img src="imagen/it.png" alt="">
                 <div class="texto">
-                    <h2>Imagen 2</h2>
-                    <p>
-                        probando 2
-                    </p>
+                    <h2>It</h2>
                 </div>
             </li>
             <li>
-                <img src="imagen/s3.jpg" alt="">
+                <img src="imagen/ted.png" alt="">
                 <div class="texto">
-                    <h2>Imagen 3</h2>
-                    <p>
-                        Probando 3
-                    </p>
+                    <h2>Ted 2</h2>
                 </div>
             </li>
             <li>
-                <img src="imagen/s4.jpg" alt="">
+                <img src="imagen/madagascar.png" alt="">
                 <div class="texto">
-                    <h2>Imagen 4</h2>
-                    <p>
-                        Probando 4
-                    </p>
+                    <h2>Madagascar </h2>
                 </div>
             </li>
         </ul>
 
     </div>
-
-    <section>
-        <div class="banner">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-theater" width="84" height="84" viewBox="0 0 24 24" stroke-width="1" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M4 20h16" />
-                <path d="M20 16v-10a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v10l4 -6c2.667 1.333 5.333 1.333 8 0l4 6z" />
-            </svg>
-            <h2>Banner</h2>
-
-    </section>
     <main>
-    
         <h3>Cartelera</h3>
-        <h3>Villa Carlos Paz</h3>
-
-        <section>
-            <h3>Pelicula 1</h3> 
+        <section class="cartelera">
+            <div class="cartelera-contenedor">
+                <div class="imagen">
+                    <img src="imagen/cine .png" alt="Pelicula">
+                </div>
+                <div class="info">
+                    <h2>Título de la película</h2>
+                    <ul>
+                        <li>Descripción de la película</li>
+                        <li>Clasificación de edad</li>
+                        <li>Género</li>
+                        <li>2D/3D</li>
+                        <li>Fecha de estreno</li>
+                        <li>Puntaje IMDB</li>
+                    </ul>
+                    <div class="botones">
+                        <button id="verHorarios">Ver Horarios</button>
+                        <div id="horarios" class="horarios">
+                            <p>Horarios:</p>
+                            <ul>
+                                <li>Horario 1</li>
+                                <li>Horario 2</li>
+                                <li>Horario 3</li>
+                            </ul>
+                        </div>
+                        <button id="comprarEntradas">Comprar Entradas</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <h3>Pelicula 2</h3> 
+        <section class="cartelera_2">
+            <div class="cartelera-contenedor">
+                <div class="imagen">
+                    <img src="imagen/cine .png" alt="Pelicula 2">
+                </div>
+                <div class="info">
+                    <h2>Título de la película 2</h2>
+                    <ul>
+                        <li>Descripción de la película 2</li>
+                        <li>Clasificación de edad 2</li>
+                        <li>Género 2</li>
+                        <li>2D/3D 2</li>
+                        <li>Fecha de estreno 2</li>
+                        <li>Puntaje IMDB 2</li>
+                    </ul>
+                    <div class="botones">
+                        <button id="verHorarios_2">Ver Horarios</button>
+                        <button id="comprarEntradas_2">Comprar Entradas</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <h3>Pelicula 3</h3> 
-        </section>
-
-        <section>
-            <h3>Pelicula 4</h3> 
-        </section>
-        <section>
-            <h3>Pelicula 5</h3> 
-        </section>
-
-        <section>
-            <h3>Pelicula 6</h3> 
-        </section>
-
-        <section>
-            <h3>Pelicula 7</h3> 
-        </section>
-
-        <section>
-            <h3>Pelicula 8</h3> 
+        <section class="cartelera_3">
+            <div class="cartelera-contenedor">
+                <div class="imagen">
+                    <img src="imagen/cine .png" alt="Pelicula 3">
+                </div>
+                <div class="info">
+                    <h2>Título de la película 3</h2>
+                    <ul>
+                        <li>Descripción de la película 2</li>
+                        <li>Clasificación de edad 3</li>
+                        <li>Género </li>
+                        <li>2D/3D </li>
+                        <li>Fecha de estreno </li>
+                        <li>Puntaje IMDB</li>
+                    </ul>
+                    <div class="botones">
+                        <button id="verHorarios_2">Ver Horarios</button>
+                        <button id="comprarEntradas_2">Comprar Entradas</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-  
+    <!-- Footer -->
     <footer>
         <p>Footer</p>
     </footer>
