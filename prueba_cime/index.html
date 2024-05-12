@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holiday Cinemas</title>
+    <title>Holiday Cinemas Villa Carlos Paz</title>
     <link rel="stylesheet" href="CSS/normalize.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
     <link rel="preload" href="style.css" as="style">
@@ -92,36 +92,61 @@
     </div>
     <main>
         <h3>Cartelera</h3>
+         <!--Voton de ubicacion-->
+  <label for="frutas">¡Elige la ubicacion y comienza la Movie!</label>
+  <select id="frutas" name="frutas">
+    <option value="">¿Donde estamos?</option>
+    <option value="vcp">Villa Carlos Paz</option>
+    <option value="jesus">Jesus Maria</option>
+    <option value="cba">Cordoba Capital</option>
+    <option value="vgb">Villa General Belgrano</option>
+    <option value="alta">Alta Gracia</option>
+  </select>
+  <button id="miBoton" onclick="redireccionar()">¡Al cine y más allá!</button>
+  <div id="resultado"></div>
+  <script src="script.js"></script>
+  <!--Voton de ubicacion-->
         <section class="cartelera">
-            <div class="cartelera-contenedor">
-                <div class="imagen">
-                    <img src="imagen/cine .png" alt="Pelicula">
-                </div>
-                <div class="info">
-                    <h2>Título de la película</h2>
-                    <ul>
-                        <li>Descripción de la película</li>
-                        <li>Clasificación de edad</li>
-                        <li>Género</li>
-                        <li>2D/3D</li>
-                        <li>Fecha de estreno</li>
-                        <li>Puntaje IMDB</li>
-                    </ul>
-                    <div class="botones">
-                        <button id="verHorarios">Ver Horarios</button>
-                        <div id="horarios" class="horarios">
-                            <p>Horarios:</p>
-                            <ul>
-                                <li>Horario 1</li>
-                                <li>Horario 2</li>
-                                <li>Horario 3</li>
-                            </ul>
-                        </div>
-                        <button id="comprarEntradas">Comprar Entradas</button>
-                    </div>
-                </div>
+          <div class="cartelera-contenedor">
+            <div class="imagen">
+              <img src="imagen/cine .png" alt="Pelicula">
             </div>
+            <div class="info">
+              <h2>Título de la película</h2>
+              <ul>
+                <li>Descripción de la película</li>
+                <li>Clasificación de edad</li>
+                <li>Género</li>
+                <li>2D/3D</li>
+                <li>Fecha de estreno</li>
+                <li>Puntaje IMDB</li>
+              </ul>
+              <button id="verHorarios">Ver Horarios</button>
+              <div id="modalHorarios" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Horarios de Cine</h2>
+                  <div class="horarios-container">
+                    <div class="dia">
+                      <h3>Lunes 2D</h3>
+                        <li>Mañana: 10:00 am - 1:00 pm</li>
+                        <li>Tarde: 3:00 pm - 6:00 pm</li>
+                        <li>Noche: 8:00 pm - 11:00 pm</li>
+                    </div>
+                    <div class="dia">
+                      <h3>Lunes 3D</h3>
+                        <li>Mañana: 11:00 am - 2:00 pm</li>
+                        <li>Tarde: 4:00 pm - 7:00 pm</li>
+                        <li>Noche: 9:00 pm - 12:00 am</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button id="comprarBoletos">Comprar Boletos</button>
+            </div>
+          </div>
         </section>
+        <script src="scripts.js"></script>
         <section class="cartelera_2">
             <div class="cartelera-contenedor">
                 <div class="imagen">
@@ -137,13 +162,32 @@
                         <li>Fecha de estreno 2</li>
                         <li>Puntaje IMDB 2</li>
                     </ul>
-                    <div class="botones">
-                        <button id="verHorarios_2">Ver Horarios</button>
-                        <button id="comprarEntradas_2">Comprar Entradas</button>
+                    <button id="verHorarios">Ver Horarios</button>
+              <div id="modalHorarios" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Horarios de Cine</h2>
+                  <div class="horarios-container">
+                    <div class="dia">
+                      <h3>Lunes 2D</h3>
+                        <li>Mañana: 10:00 am - 1:00 pm</li>
+                        <li>Tarde: 3:00 pm - 6:00 pm</li>
+                        <li>Noche: 8:00 pm - 11:00 pm</li>
                     </div>
+                    <div class="dia">
+                      <h3>Lunes 3D</h3>
+                        <li>Mañana: 11:00 am - 2:00 pm</li>
+                        <li>Tarde: 4:00 pm - 7:00 pm</li>
+                        <li>Noche: 9:00 pm - 12:00 am</li>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <button id="comprarBoletos">Comprar Boletos</button>
             </div>
+          </div>
         </section>
+        <script src="scripts.js"></script>
         <section class="cartelera_3">
             <div class="cartelera-contenedor">
                 <div class="imagen">
@@ -159,13 +203,32 @@
                         <li>Fecha de estreno </li>
                         <li>Puntaje IMDB</li>
                     </ul>
-                    <div class="botones">
-                        <button id="verHorarios_2">Ver Horarios</button>
-                        <button id="comprarEntradas_2">Comprar Entradas</button>
+                    <button id="verHorarios">Ver Horarios</button>
+              <div id="modalHorarios" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Horarios de Cine</h2>
+                  <div class="horarios-container">
+                    <div class="dia">
+                      <h3>Lunes 2D</h3>
+                        <li>Mañana: 10:00 am - 1:00 pm</li>
+                        <li>Tarde: 3:00 pm - 6:00 pm</li>
+                        <li>Noche: 8:00 pm - 11:00 pm</li>
                     </div>
+                    <div class="dia">
+                      <h3>Lunes 3D</h3>
+                        <li>Mañana: 11:00 am - 2:00 pm</li>
+                        <li>Tarde: 4:00 pm - 7:00 pm</li>
+                        <li>Noche: 9:00 pm - 12:00 am</li>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <button id="comprarBoletos">Comprar Boletos</button>
             </div>
+          </div>
         </section>
+        <script src="scripts.js"></script>
     </main>
     <!-- Footer -->
     <footer>
